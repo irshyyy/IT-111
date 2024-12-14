@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8e1e8; /* Light pink theme */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ff66b2; /* Soft Pink */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar .active {
+    color: #ffccff; /* Light lavender for hover effect */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffe6f0; /* Very light pink for contact section */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded edges for a softer feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff66b2;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ff3385;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 40px;
+    margin: 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff66b2;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact h1 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        font-size: 30px;
+    }
+}

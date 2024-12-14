@@ -1,0 +1,110 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FF80AB; /* Light pink background for the body */
+    color: #333;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SDG Section Styles */
+.SDG {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(145deg, #D5006D, #FF80AB); /* Dark pink to light pink gradient */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    width: 80%; /* Set a max width to avoid stretching too much on large screens */
+    max-width: 1200px;
+}
+
+.SDG-header h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.SDG-header p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure columns wrap on smaller screens */
+}
+
+.SDG-col {
+    flex: 1;
+    background-color: #D5006D; /* Dark pink background for SDG columns */
+    border-radius: 12px;
+    padding: 30px;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    height: 100%;
+    position: relative;
+}
+
+.SDG-col h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.SDG-col p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.SDG-col:hover {
+    transform: translateY(-10px);
+    background-color: #FF80AB; /* Light pink hover effect */
+}
+
+/* Add some depth with hover shadow */
+.SDG-col:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SDG-col {
+        width: 90%; /* Make the columns fill available width */
+        margin-bottom: 20px;
+    }
+
+    .SDG-header h1 {
+        font-size: 36px;
+    }
+
+    .SDG-header p {
+        font-size: 16px;
+    }
+}
